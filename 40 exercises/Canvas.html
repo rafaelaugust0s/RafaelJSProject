@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lan="en">
+
+<head>
+
+  <title> Canvas </title>
+
+<style>
+
+ canvas {border: 10px solid black;}
+  </style>
+
+
+  <script>
+
+  const GWINDOW_WIDTH= 500;
+  const GWINDOW_HEIGTH= 300;
+
+function drawLines(){
+
+var gw= GWindow(GWINDOW_WIDTH,GWINDOW_HEIGTH);
+var line= null;
+gw.addEventListener("mousedown", mousedownAction);
+gw.addEventListener("drag", dragAction);
+
+function mousedownAction(e){
+line=Gline(e.getX(), e.getY(),e.getX(),e.getY());
+gw.add (line);
+
+}
+function dragAction(e){
+  line.setEndPoint(e.getX(),e.getY());
+
+
+}
+}
+
+
+
+
+  </script>
+</head>
+
+
+
+
+
+<body>
+  <h1> Canvas</h1>
+
+  <canvas width="500" height:"200" id="myCanvas"> </canvas>
+
+
+<h2>the DrawLines program, interactive drawing programs allow you to add other shapes to the canvas. In a typical drawing application, you create a rectangle by pressing the mouse at one corner and then dragging it to the opposite corner</h2>
+</body>
+
+
+
+
+</html>

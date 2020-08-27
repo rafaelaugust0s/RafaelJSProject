@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Subset Of A String</title>
+
+
+<script>
+
+
+String.prototype.sub_String = function ()
+{
+
+ var subset=[];
+
+for(var m=0; m<this.length; m++)
+{
+  for(var n= m+1; n<this.length+1; n++)
+  {
+
+    subset.push(this.slice(m,n));
+  }}
+  return subset;
+};
+
+    document.write ("dog".sub_String());
+    document.write("<br>");
+    document.write("blue".sub_String());
+
+//var result= document.getElementById('result').innerHTML= subset
+
+
+
+</script>
+
+</head>
+
+<body>
+<h1> Subset Of A String </h1>
+
+<h2> Write a program that writes the subset of a word </h2>
+
+
+</body>
+
+
+
+</html>

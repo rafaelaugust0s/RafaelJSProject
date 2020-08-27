@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<title> Histogram</title>
+
+  <script>
+
+    var scores = []
+
+    for(var i =1; i<=10; i++){
+      scores.push(prompt("Enter  score for student "+ i))
+    }
+
+
+    var histo_data = [0,0,0,0,0,0,0,0,0,0,0]
+
+    for(var i =0 ; i< scores.length ; i++){
+
+      if(scores[i] > 0 && scores[i] <= 9){
+        histo_data[0] = histo_data[0]+1
+      }
+
+      if(scores[i] >= 10 && scores[i] <= 19){
+        histo_data[1] = histo_data[1]+1
+      }
+
+      if(scores[i] >= 20 && scores[i] <= 29){
+        histo_data[2] = histo_data[2]+1
+      }
+
+      if(scores[i] >= 30 && scores[i] <= 39){
+        histo_data[3] = histo_data[3]+1
+      }
+
+      if(scores[i] >= 40 && scores[i] <= 49){
+        histo_data[4] = histo_data[1]+1
+      }
+
+      if(scores[i] >= 50 && scores[i] <= 59){
+        histo_data[5] = histo_data[5]+1
+      }
+
+      if(scores[i] >= 60 && scores[i] <= 69){
+        histo_data[6] = histo_data[6]+1
+      }
+
+      if(scores[i] >= 70 && scores[i] <= 79){
+        histo_data[7] = histo_data[7]+1
+      }
+
+      if(scores[i] >= 80 && scores[i] <= 89){
+        histo_data[8] = histo_data[8]+1
+      }
+
+      if(scores[i] >= 90 && scores[i] <= 99){
+        histo_data[9] = histo_data[9]+1
+      }
+
+      if(scores[i] == 100){
+        histo_data[10] = histo_data[10]+1
+      }
+    }
+
+
+    for(var i =0 ; i < histo_data.length; i++){
+
+       var total_stars =''
+
+      for(var j=0 ; j<histo_data[i]; j++){
+          total_stars = total_stars+"*"
+      }
+
+    //  console.log(i+"Os :" + histo_data[i])
+      console.log(i+"Os :" + total_stars)
+
+    }
+
+    //document.write(scores);
+
+//document.write(histo_data);
+//document.write(total_stars);
+  </script>
+</head>
+
+
+
+
+
+  <body>
+
+
+<h1> Histogram </h1>
+
+<h2>Write a program called Histogram that allows the user to select a file containing exam scores ranging from 0 to 100 and then displays a histogram of those scores, divided into the ranges 0–9, 10–19, 20–29, and so forth, up to the range containing only the value 100. Your functionshould match the format shown in the sample run as closely as possible.thank you Parth!</h2>
+
+
+
+    </body>
+
+
+
+    </html>

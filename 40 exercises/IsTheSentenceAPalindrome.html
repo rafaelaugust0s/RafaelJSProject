@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<title> Is the Sentence a Palindrome </title>
+
+<script>
+
+function checkPalindrome(str_entry){
+
+var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+var ccount = 0;
+if(cstr==="") {
+  console.log("Nothing found!");
+  return false;
+}
+if ((cstr.length) % 2 === 0) {
+ccount = (cstr.length) / 2;
+} else {
+  if (cstr.length === 1) {
+  console.log("Entry is a palindrome.");
+
+  return true;
+  } else {
+    ccount = (cstr.length - 1) / 2;
+    		}
+    	}
+      	for (var x = 0; x < ccount; x++) {
+          if (cstr[x] != cstr.slice(-1-x)[0]) {
+			console.log("Entry is not a palindrome.");
+			return false;
+		}
+	}
+  console.log("The entry is a palindrome.");
+	return true;
+
+}
+
+console.log(checkPalindrome('nurses run'));
+document.write(checkPalindrome('nurses run'));
+
+console.log (checkPalindrome('able was I ere I saw Elba'));
+console.log (checkPalindrome('laptop'));
+
+
+  </script>
+    </head>
+
+
+
+
+
+  <body>
+
+
+<h1> Is the Sentence a Palindrome  </h1>
+
+<h2> Rewrite the isPalindrome function so that it operates recursively, taking advantage of the fact that a string is a palindrome if (a) its length is less than two or (b) its first and last characters match and the substring between those characters is a palindrome.</h2>
+
+
+
+    </body>
+
+
+
+    </html>

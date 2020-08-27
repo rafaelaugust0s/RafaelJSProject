@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> MorningOoAfternoon</title>
+
+
+
+
+<script>
+
+
+function time(){
+
+var hour= (document.getElementById('hour').value)
+
+if(hour>=0 && hour<12){
+  document.getElementById('result').innerHTML=("Good Morning!")
+}
+ else if(hour>=12 && hour<18) {
+   document.getElementById('result').innerHTML=("Good Afternoon!")
+}
+
+else{
+  document.getElementById('result').innerHTML=("Good Evening!")
+
+ }
+}
+  </script>
+
+
+  </head>
+  <body>
+
+
+<h1> Morning/ Afternoon / Evening!</h1>
+
+  <h2> Write a function that outputs  if it is morning, afternoon or evening by entering 24 hr format</h2>
+
+
+<h2 id="result"> </h2>
+
+<input type= "text" placeholder="Enter a  number from 0 to 24" id= "hour" >
+<br> <br>
+<button onclick="time()"> CHECK </button>
+
+
+  </body>
+</html>

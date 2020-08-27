@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<title> Thousand separators </title>
+
+<script>
+
+function addCommas(num){
+
+var numParts= num.toString().split(".");
+numParts[0]=numParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+return numParts.join(".");
+
+}
+console.log (addCommas(12344556690));
+document.write (addCommas(0192837465));
+
+  </script>
+    </head>
+
+
+    <h1> Write a program a Add commas at every third position of a set of numbers</h1>
+
+
+
+  <body>
+
+
+<h1> Thousand separators  </h1>
+
+
+
+    </body>
+
+
+
+    </html>

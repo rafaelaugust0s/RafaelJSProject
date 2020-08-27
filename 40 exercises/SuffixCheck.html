@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<title> Suffix check </title>
+
+<script>
+ function stringEndsWith(str,suffix){
+   {
+if (((str===null)||(str===''))||((suffix===null)||(suffix==='')))
+
+ {
+   return false;
+ }
+ else {
+   str=str.toString();
+   suffix=suffix.toString();
+ }
+return str.indexOf(suffix,str.length- suffix.length) !== -1;
+}}
+
+console.log (stringEndsWith('JS PHP PYTHON','PYTHON'));
+document.write(stringEndsWith('JS PHP PYTHON','PYTHON'));
+document.write("<br>");
+document.write(stringEndsWith("vocal","ly"));
+
+
+  </script>
+    </head>
+
+
+
+
+
+  <body>
+
+
+<h1> Suffix Check </h1>
+
+<h2> Please check the console!Implement the function endsWith(str, suffix) that checks whether str ends with the specified suffix.</h2>
+
+
+
+    </body>
+
+
+
+    </html>

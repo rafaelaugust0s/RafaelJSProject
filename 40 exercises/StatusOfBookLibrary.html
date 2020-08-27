@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title> Status of a book library </title>
+
+<script>
+
+var library=[
+{ title: 'HUndred Years Of Solitud',
+  author: 'Gabo',
+  readingStatus: true
+},
+
+{ title: 'What does this button do?',
+  author: 'Bruce Dickinson',
+  readingStatus: true
+},
+
+{ title: 'Lord of the flies',
+  author: 'William Golding',
+  readingStatus: false
+}];
+
+for (var i=0; i< library.length; i++)
+{
+  var book = "'" + library[i].title + "'" + ' by ' + library[i].author + "."+ "<br>";
+    if (library[i].readingStatus) {
+      document.write("Already read " + book);
+    } else
+    {
+     document.write("You still need to read " + book);
+    }
+   }
+
+
+</script>
+
+
+</head>
+
+
+
+<body>
+
+  <h1> Your book library </h1>
+
+  <h2>  Create a library that shows the status of books read!</h2>
+</body>
+
+
+</html>

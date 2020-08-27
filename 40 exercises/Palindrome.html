@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<title> Palindrome </title>
+
+<script>
+
+function isPalindrome(str){
+
+    for(i=0; i<str.length; i++){
+    console.log (str.substring(i,i+1));
+    console.log (str.substring(str.length-i -1, str.length-i));
+
+if(str.substring(i,i+1)!==str.substring(str.length-i -1, str.length-i)){
+  return false
+}
+
+}}
+
+console.log (isPalindrome("racecar"))
+document.write("racecar")
+  </script>
+    </head>
+
+
+
+
+
+  <body>
+
+
+<h1> Palindrome </h1>
+
+<h2>Rewrite the isPalindrome function so that it operates recursively, taking advantage of the fact that a string is a palindrome if (a) its length is less than two or (b) its first and last characters match and the substring between those characters is a palindrome. </h2>
+
+
+
+    </body>
+
+
+
+    </html>

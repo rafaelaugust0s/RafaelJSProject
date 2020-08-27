@@ -1,0 +1,58 @@
+<!doctype html>
+
+
+
+<html lan="en">
+
+<head>
+
+  <title> What's the smallest number?</title>
+
+
+<script>
+
+function min(){
+
+var num1=Number (document.getElementById('num1').value)
+var num2=Number (document.getElementById('num2').value)
+var num3=Number (document.getElementById('num3').value)
+
+
+if(num1<=num2 && num1<=num3){document.getElementById('result').innerHTML=(num1)}
+
+  else if(num2<=num1 && num2<=num3){document.getElementById('result').innerHTML=(num2)}
+
+else{document.getElementById('result').innerHTML=(num3)}
+  }
+
+    </script>
+
+
+</head>
+
+
+<body>
+  <h1> What's the smallest number?</h1>
+
+
+  <h2 id="result"> </h2>
+
+  <input type= "text" placeholder="enter 1st number " id= "num1" >  <br> <br>
+
+  <input type= "text" placeholder="enter 2st number " id= "num2" >  <br> <br>
+
+  <input type= "text" placeholder="enter 3st number " id= "num3" >  <br> <br>
+
+
+  <br> <br>
+  <button onclick="min()"> CHECK </button>
+
+  <h2> Write a function that allow the user to find the smallest number of the three</h2>
+
+
+</body>
+
+
+
+
+</html>

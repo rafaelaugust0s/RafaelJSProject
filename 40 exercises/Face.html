@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Face</title>
+
+
+<style>
+
+
+
+</style>
+    <script>
+
+
+    function face()
+{
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext)
+  {
+    var context = canvas.getContext('2d');
+    context.beginPath();
+   // Outer circle
+    context.arc(100,100,80,0,Math.PI*2,true);
+    context.moveTo(15,75);
+    context.strokeStyle = '#FF0000';
+    context.lineWidth= 5;
+
+    // Mouth
+    context.arc(75,75,35,0,Math.PI,false);
+    // Lefy and Right eye
+    context.moveTo(55,65);
+    context.arc(60,65,5,0,Math.PI*2,true);
+    context.arc(90,65,5,0,Math.PI*2,true);
+    context.stroke();
+
+  }
+}
+
+
+    </script>
+
+
+  </head>
+
+  <body onload="face();">
+
+      <canvas id="canvas" width="600" height="500"></canvas>
+
+    <h1>  Java's face <h/> <br>
+
+<h2> Use the GOval, GLine, and GRect classes to create a cartoon drawing of a face that looks like this</h2>
+<br> <br>
+
+  </body>
+</html>

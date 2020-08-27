@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Face</title>
+
+    <script>
+
+
+    function draw()
+      {
+    var canvas = document.getElementById('circle');
+    if (canvas.getContext)
+    {
+    var ctx = canvas.getContext('2d');
+    var X = canvas.width / 2;
+    var Y = canvas.height / 2;
+    var R = 100;
+    ctx.beginPath();
+    ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = '#FF0000';
+    ctx.stroke();
+    }
+    }
+
+
+    </script>
+
+
+  </head>
+
+  <body onload="draw();">
+
+      <canvas id="circle" width="300" height="300"></canvas>
+
+    <h1>  Java's Circle <h/> <br>
+
+<h2> Rewrite the Target.js program from Figure 4-14 so that the number and radii of the circles are controlled by the following constants:</h2>
+
+<br> <br>
+
+  </body>
+</html>

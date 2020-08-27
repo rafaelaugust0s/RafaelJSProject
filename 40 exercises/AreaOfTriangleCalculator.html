@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<title> Area Of a triagle Calculator</title>
+
+
+<head>
+
+
+
+<script type="text/javascript">
+
+  function TriangleArea(){
+    var base = document.getElementById('base').value
+    var height= document.getElementById('height').value
+
+    var Result= document.getElementById('result')
+
+    if (isNaN(base) || isNaN(height))
+     {
+      result.textContent= "Enter two numbers";
+  } else {
+    var area = 0.5 * base * height;
+    result.textContent= "AREA="+ area;}
+
+  }
+
+
+
+</script>
+  </head>
+
+
+
+  <body>
+<h1> Area of a Triangle </h1>
+
+Base <input type="text" id="base">
+
+Height <input type="text" id="height">
+
+<br>
+<br>
+<br>
+
+  <button type="button" onclick="TriangleArea()">AREA</button>
+
+<p id= "result">Result</p>
+
+<h2> Write a function that computes the area of a triangle given values for its base and its height</h2>
+
+
+    </body>
+
+
+
+    </html>
