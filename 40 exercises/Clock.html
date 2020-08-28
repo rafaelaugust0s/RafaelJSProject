@@ -13,9 +13,9 @@
 
 function myClock(){
   this.cur_date = new Date();
-this.hours = this.cur_date.getHours();
-this.minutes = this.cur_date.getMinutes();
-this.seconds = this.cur_date.getSeconds();
+    this.hours = this.cur_date.getHours();
+      this.minutes = this.cur_date.getMinutes();
+        this.seconds = this.cur_date.getSeconds();
 }
 
 myClock.prototype.run= function(){
@@ -23,20 +23,20 @@ myClock.prototype.run= function(){
   };
   myClock.prototype.update=function(){
     this.updateTime(1);
-    document.write(this.hours+":"+ "<br>"+this.minutes+":"+this.seconds);
+      document.write(this.hours+":"+ "<br>"+this.minutes+":"+this.seconds);
   };
   myClock.prototype.updateTime = function (secs)
     {
-    this.seconds+= secs;
+     this.seconds+= secs;
    if (this.seconds >= 60)
     {
-    this.minutes++;
-    this.seconds= 0;
+     this.minutes++;
+        this.seconds= 0;
     }
    if (this.minutes >= 60)
     {
-    this.hours++;
-    this.minutes=0;
+      this.hours++;
+        this.minutes=0;
     }
   if (this.hours >= 24)
     {
@@ -58,6 +58,8 @@ myClock.prototype.run= function(){
 <body>
 
 <h1> CLOCK!! </h1>
+  
+  <p> Write a that displays the time in hours minutes and seconds </p>
 
   </body>
 
