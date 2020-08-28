@@ -9,36 +9,32 @@
   <script>
 
 
-  //function Payroll(names){
 
-  var names=["Rob","Ryan","Ted"]
 
-var position =["CEO","Vice President","Programmer"]
+var employees =[
+{  Name:"Rob Dylan",position: "CEO",salary:"$10000",},
+{Name:"Ryan Jobs",position: "Vice President",salary:"$5000",},
+{Name:"Ted Stokes",position: "Programmer",salary:"$8000",}]
 
-var Rob={
-  Name:"Rob Dylan",
-  position: "CEO",
-  salary:"$10000",
+function Payroll(employees){
+
+for(i=0; i<employees.length;i++){
+
+  document.write("Name  "+employees[i].Name+"Position  "+employees[i].position+"Salary  "+employees[i].salary);
+document.write("<br>")
+
 }
-  var Ryan={
-    Name:"Ryan Jobs",
-    position: "Vice President",
-    salary:"$5000",
-}
-var Ted={
-  Name:"Ted Stokes",
-  position: "Programmer",
-  salary:"$8000",
 }
 
 
+Payroll(employees);
 
 
 
-console.log (Rob);
-document.write()
-console.log (Ryan);
-console.log (Ted);
+
+
+
+
 
 
   </script>
