@@ -15,18 +15,18 @@
   <script>
 
   const GWINDOW_WIDTH= 500;
-  const GWINDOW_HEIGTH= 300;
+    const GWINDOW_HEIGTH= 300;
 
 function drawLines(){
 
 var gw= GWindow(GWINDOW_WIDTH,GWINDOW_HEIGTH);
-var line= null;
-gw.addEventListener("mousedown", mousedownAction);
-gw.addEventListener("drag", dragAction);
+  var line= null;
+   gw.addEventListener("mousedown", mousedownAction);
+     gw.addEventListener("drag", dragAction);
 
 function mousedownAction(e){
-line=Gline(e.getX(), e.getY(),e.getX(),e.getY());
-gw.add (line);
+  line=Gline(e.getX(), e.getY(),e.getX(),e.getY());
+    gw.add (line);
 
 }
 function dragAction(e){
